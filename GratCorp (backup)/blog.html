@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add a gray background color with some padding */
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: #f1f1f1;
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 1px;
+            font-size: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+
+        /* Fake image */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        .imgheight{
+            height:auto;
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Blogs</h2>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card" id="blog1">
+                <h2>Is ITIL certification worth your time and effort?</h2>
+                <h5>Published on: Sep 29, 2019</h5>
+                <img src="images/about-01.jpg" class="img-responsive imgheight" alt="">
+                <p>A pertinent question indeed!</p>
+                <p>We all know how much time and efforts are required to become an ITILv3 expert (and yes – not to forget the cost involved for training and certification as well!). There are minimum 6 exams (if you opt for Capability Stream) or else 7 (for Lifecycle stream) and around 150-200K INR which is quite higher relatively (as per Indian standards compared to other similar certificates like Prince 2, PMP etc.).</p>
+                <p>Hold on, but that does not mean that these are not worth striving for. In fact, it all depends on individual’s interest in the area and the opportunity for you to actually implement it in your organization and demonstrate the benefits. So ,  if you really think it’s going to benefit the organization in the long run (by the way, that also depends on “How it is implemented” ) , then you can invest in it gradually and learn one module at a time  and try to implement it as well and see the results. </p>
+                <p>However, there are not so many jobs in the market for ITIL experts, so if you think that you will make it quite big if you achieve all these certifications, then you are thinking in the wrong direction. So, my single piece of advice would be that you do it only if you are really sure about your interest and you really want to learn, understand and implement it. And, if you have made up your mind to go for it, then just take small steps at a time so that you can get the results in parallel and try to arrange sponsorship from your organization if money matters  But you should at least do foundation to understand the overall picture !</p>
+            </div>
+            <div class="card" id="blog2">
+                <h2>What’s the difference between ITSM and ITIL???</h2>
+                <h5>Published on: Sep 08, 2019</h5>
+                <img src="images/about-02.jpg" class="img-responsive imgheight" alt="">
+                <p>There is a clear difference between these 2 terminologies. ITSM refers to “IT Service Management” which means managing your IT services (Design, Plan, Deliver, Operate and Control) to provide cost effective solutions to your customers/end users whereas “ITIL” refers to “Information Technology Infrastructure Library” which is just a set of best practices used as a guideline and framework to practice IT Service Management. In Simple words, ITIL is used for ITSM and not vice-versa.</p>
+                <p>Some more if you are interested further:</p>
+                <ol>
+                    <li>
+                        ITIL is published as a series of 5 core books (which cover 5 service lifecycles) and it is owned and managed by AXELOS (JV – Capita & UK Cabinet Office) whereas ITSM is a discipline not owned and managed by anyone.
+                    </li>
+                    <li>
+                        You can be ITIL certified ; not ITSM certified – There are no exams and certification schemes for ITSM
+                    </li>
+                    <li>
+                        Even if you don’t follow ITIL and you are still managing IT services, that still means that you are doing ITSM.
+                    </li>
+                </ol>
+            </div>
+            <div class="card" id="blog3">
+                <h2>Top 10 tips to crack ITIL interview</h2>
+                <h5>Published on: Oct 09, 2019</h5>
+                <img src="images/about-05.jpg" class="img-responsive imgheight" alt="">
+                <p>You must have read this at multiple sites so far if you are really interested in finding out the tips to crack ITIL interview and I would also like to add my 2 cents here. Follow if you really like them :)</p>
+                <ol>
+                    <li>
+                        You should first try to understand the question well because sometimes they are really tricky and understand what exactly the interviewer is looking for – don’t try to catch just keywords!
+                    </li>
+                    <li>
+                        Apart from theoretical conceptual knowledge, you really need to have some practical experience in ITIL implementation. If not, then consult someone who has that experience :)
+                    </li>
+                    <li>
+                        Generally you would be asked the challenges faced whenever you had tried to implement any process and how did you overcome them – so be prepared with at least 2-3 case studies , e.g., people generally don’t accept changes so easily and also they don’t want to follow lengthy and tedious processes, so how can we make it easy for them so that we can achieve our objectives without putting so much of process overhead (Tools, technology, integration)
+                    </li>
+                    <li>
+                        You should have clear understanding of how these processes are inter-related
+                    </li>
+                    <li>
+                        Stick to official definitions wherever possible but don’t forget to add your flavor by citing some real-life examples
+                    </li>
+                    <li>
+                        Keep a handy flow chart of all ITIL processes , functions and lifecycle to quickly review it before the interview (Google it :))
+                    </li>
+                    <li>
+                        You should have clear understanding of the objectives of all the processes (don’t mug up – just try to understand them :))
+                    </li>
+                    <li>
+                        Be prepared with some common misconceptions for ITIL, e.g., people think that it is only dealing with requests, incidents, problems, changes etc. but in reality it is much more than that!
+                    </li>
+                    <li>
+                        Understand how it helps customers achieve their business goals as the whole foundation of this framework is laid on the concept of service which is always perceived from the point of view of customer.
+                    </li>
+                    <li>
+                        Last, but not the least, check some sample questions available on various websites and try to answer those questions yourself without looking at pre-published answers – Helps in building confidence or even reality check sometimes :)
+                    </li>
+                </ol>
+            </div>
+
+            <div class="card" id="blog4">
+                <h2>How to implement ITIL???</h2>
+                <h5>Published on: Nov 04, 2019</h5>
+                <img src="images/about-06.jpg" class="img-responsive imgheight" alt="">
+                <p>That’s really a difficult topic to cover in one single blog as lot of books and articles have been written about it and it is obvious that everybody would have their own perceptions but I would like to highlight few points which should be common across any such implementation irrespective of the size and the domain of the organization.</p>
+                <p>First of all, we need to clearly understand that it is a huge change involving cultural, process related, people and technology related etc. So, it has to follow the basics of Organization Change Management like:</p>
+                <ol>
+                    <li>
+                        You have to have <b>buy-in</b> from top management and sponsors
+                    </li>
+                    <li>
+                        Identify the <b>right stakeholders</b> (anyone who is impacted or who can impact) and build an appropriate project working group
+                    </li>
+                    <li>
+                        <b>Clear communication plan</b> for all stakeholders throughout the journey and arrange recurring meetings for feedback and progress
+                    </li>
+                    <li>
+                        <b>Resistance Management </b>  - Need to know how to manage those people who are not willing to adopt it as they might have their own valid reasons, so you need to address their concerns genuinely
+                    </li>
+                    <li>
+                        Earn some <b>supporters</b> initially who might help you in the long run
+                    </li>
+                    <li>
+                        Show some <b>quick wins</b> to management and stakeholders
+                    </li>
+                    <li>
+                        Take <b>feedback</b> from people rather than imposing your own ideas
+                    </li>
+                    <li>
+                        <b>Start from wherever you are</b> – no point dismissing all existing processes just because you want to implement ITIL
+                    </li>
+                    <li>
+                        <b>Go step by step</b> so that people can absorb it more effectively
+                    </li>
+                    <li>
+                        <b>First</b> agree on the <b>process</b> and <b>then</b> determine the right <b>tool</b> considering all parameters like cost, ease of implementation, maintenance and administration, integration with 3rd party/in-house products, reporting and dashboards etc
+                    </li>
+                    <li>
+                        Define the <b>right KPIs</b> for each process and measure them iteratively to understand the process
+                    </li>
+                    <li>
+                        Provide <b>adequate training</b> to the relevant teams
+                    </li>
+                    <li>
+                        You need to <b>reinforce</b> the change to avoid people reverting to their old ways and habits – putting right level of control and governance
+                    </li>
+                    <li>
+                        Last, but not the least – <b>Maintain balance</b> between process overhead and controls – It should not be highly bureaucratic – Utilize technology and automation wherever possible
+                    </li>
+                </ol>
+                <p>This article can really go quite long if I start talking about all the steps involved to implement ITIL but as I said before, if we try to stick to the basics and consider above points, then you can be really effective. I would strongly recommend going through 9 guiding principles from ITIL practitioner book (really practical and useful)</p>
+
+            </div>
+            <!--<div class="card" id="blog5">
+        <h2>Value from ITIL Implementation</h2>
+        <img src="images/about-03.jpg" class="img-responsive" alt="">
+        <p>Ideally this question should be the foundation stone when you think of implementing ITIL in your organization. You should clearly know what are you expecting out of it so that you can measure its success effectively and propose a clear & concise business case with ROI mode.</p>
+        <p>Some of the clear benefits of ITIL (if it is implemented effectively :) )</p>
+        <ol>
+            <li>
+                Reduced cost of operations by:
+                <ul>
+                    <li>
+                        Optimization of L1 & L2 resources – Effective resource utilization
+                    </li>
+                    <li>
+                        Standardizing all aspects of service operations
+                    </li>
+                    <li>
+                        Eliminating waste by avoiding reinventing wheel every time you work on similar scenarios by defining SoPs
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Enhanced Customer Satisfaction and business revenues by:
+                <ul>
+                    <li>
+                        Aligning business priorities with IT priorities
+                    </li>
+                    <li>Higher availability and continuity of services</li>
+                    <li>
+                        More secure & high performing applications
+                    </li>
+                    <li>
+                        Confidence while scaling up the business as clear visibility into IT demand and capacity management
+                    </li>
+                    <li>
+                        Maintaining business stability while delivering changes
+                    </li>
+                    <li>
+                        Easy interface and communication channel for end users
+                    </li>
+                    <li>
+                        Continuous improvement of services – higher business
+                    </li>
+                    <li>
+                        Effective management of business risks
+                    </li>
+                    <li>
+                        Cost effective systems and solutions
+                    </li>
+                    <li>
+                        Effective financial management throughout lifecycle
+                    </li>
+
+
+                </ul>
+            </li>
+        </ol>
+    </div>-->
+            <!--<div class="card" id="blog6">
+        <h2> Software Asset Management  </h2>
+        <h5>Title description, Dec 7, 2017</h5>
+        <img src="images/about-01.jpg" class="img-responsive" alt="">
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card" id="blog7">
+        <h2>Security Operations</h2>
+        <h5>Title description, Sep 2, 2017</h5>
+        <img src="images/about-03.jpg" class="img-responsive" alt="">
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>-->
+
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>Upcoming Blogs...</h2>
+                <div class="fakeimg">
+                    <img src="images/about-03.jpg" class="imgheight" />
+
+                </div>
+                <b>Value from ITIL Implementation</b>
+            </div>
+            <!--<div class="card">
+                <h3>Popular Post</h3>
+                <div class="fakeimg">Image</div><br>
+                <div class="fakeimg">Image</div><br>
+                <div class="fakeimg">Image</div>
+            </div>
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>Some text..</p>
+            </div>-->
+        </div>
+    </div>
+
+</body>
+</html>
