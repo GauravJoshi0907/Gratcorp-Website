@@ -97,7 +97,8 @@ li {
 /* Feature Container Styling */
 .feature {
     text-align: center;
-    background: #fff;
+    /* background: #fff; */
+    background-color:#F0FFF0;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
