@@ -90,14 +90,14 @@ li {
 
 /* General Section Styling */
 .feature-section {
-    background-color: #f9f9f9;
+/*    background-color: #f9f9f9;*/
     padding: 50px 0;
 }
 
 /* Feature Container Styling */
 .feature {
     text-align: center;
-    /* background: #fff; */
+/*    background: #fff;*/
     background-color:#F0FFF0;
     border-radius: 8px;
     padding: 20px;
@@ -216,7 +216,7 @@ li {
 /*Journey Section CSS starts here*/
 #journey-section{
 	padding: 5%;
-	margin-top:2.5%;
+/*	margin-top:2.5%;*/
 	/*margin-left: 5%;
 	margin-right: 5%;*/
 }
@@ -234,6 +234,7 @@ li {
 .journey-right {
     width: 45%;
 }
+
 
 .project-container {
     align-items: center;
@@ -281,7 +282,7 @@ li {
 
 #testimonials{
 	padding: 5%;
-	margin: 2.5% 5%;
+/*	margin: 2.5% 5%;*/
 }
 
 .testimonial-text {
@@ -332,7 +333,8 @@ li {
 }
 
 .swiper-slide {
-	background: #fff;
+/*	background: #fff;*/
+	background-color:#F0FFF0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 49%;
@@ -388,7 +390,24 @@ li {
 }
 
 /*Section heading effect CSS ends here*/
-/*#5BB12F*/
+
+/*About Us Section CSS starts here*/
+
+.about-us-blocks{
+/*	text-align: center;*/
+    background-color:#F0FFF0;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*About Us Section CSS ends here*/
+
 /* CSS by Gaurav Joshi Ends Here*/
 
 .btn-primary {
@@ -1344,6 +1363,8 @@ and (min-width : 551px){
 .about-us-section-1 {
     /*padding-top: 80px;
     padding-bottom: 60px;*/
+    padding: 5%;
+    padding-top: 3%;
 }
 
 .about-us-section-2 {
