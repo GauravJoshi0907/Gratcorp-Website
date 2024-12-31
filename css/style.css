@@ -211,6 +211,18 @@ li {
         height: auto;
     }
 }
+
+*Aditi Changes- For Video*/
+video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 /*Our Service Section CSS ends here*/
 
 /*Journey Section CSS starts here*/
