@@ -385,7 +385,7 @@ li {
 }
 
 .client-logo {
-    width: 40px; /* Adjust size as needed */
+    width: 40px; 
     height: 40px; /* Maintain proportion */
 }
 .client-details {
@@ -422,6 +422,7 @@ li {
     max-width: 49%;
     margin-right: 0px;
     padding: 20px;
+    height: auto;
 }
 
 .swiper-pagination-bullet {
@@ -501,10 +502,10 @@ li {
         gap: 10px;
     }
 
-/*     .client-logo {
+    /*.client-logo {
         width: 60px;
         height: 60px;
-    } */
+    }*/
 
     .client-name {
         font-size: 1.2rem;
@@ -530,10 +531,10 @@ li {
         padding: 20px;
     }
 
-    /*  .client-logo {
+    /*.client-logo {
         width: 70px;
         height: 70px;
-    } */
+    }*/
 
     .client-name {
         font-size: 1.4rem;
@@ -544,7 +545,6 @@ li {
     }
 }
 /* Testimonial Section CSS ends here */
-
 
 /*Section heading effect CSS starts here*/
 
