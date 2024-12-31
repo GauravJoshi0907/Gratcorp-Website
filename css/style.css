@@ -83,6 +83,7 @@ li {
     font-weight: 300;
 }
 
+
 /* CSS by Gaurav Joshi Starts Here */
 
 /*Our Service Section CSS starts here*/
@@ -263,16 +264,91 @@ li {
 	text-align: center;
 }
 
-@media (min-width: 768px) and (max-width: 1255px){
+/* Media Queries for Small Devices (e.g., tablets, smartphones) */
+@media (max-width: 767px) {
+    #journey-section {
+        padding: 3%;
+    }
 
-.journey-container {
-    flex-direction: column;
+    .journey-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .journey-left, .journey-right {
+        width: 100%;
+    }
+
+    .journey-right p {
+        font-size: 16px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .project-head {
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .project-head h1 {
+    	text-align: center;
+        font-size: 60px;
+    }
+
+    .project-head p {
+        font-size: 16px;
+    }
 }
 
-.journey-left, .journey-right {
-    width: 100%;
+/* Media Queries for Medium Devices (e.g., tablets in landscape mode) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .journey-container {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .journey-left, .journey-right {
+        width: 100%;
+    }
+
+    .journey-right p {
+        font-size: 18px;
+    }
+
+    .project-container {
+        gap: 1.5rem;
+    }
+
+    .project-head h1 {
+        font-size: 80px;
+    }
+
+    .project-head p {
+        font-size: 18px;
+    }
 }
 
+/* Media Queries for Larger Tablets (e.g., iPads) */
+@media (min-width: 992px) and (max-width: 1255px) {
+    .journey-container {
+        gap: 1.5rem;
+    }
+
+    .journey-right p {
+        font-size: 20px;
+    }
+
+    .project-head h1 {
+        font-size: 90px;
+    }
+
+    .project-head p {
+        font-size: 18px;
+    }
 }
 
 /*Journey Section CSS ends here*/
@@ -290,6 +366,7 @@ li {
 	font-family: 'Helvetica', sans-serif;
     font-size: 2rem;
     color: #555;
+/*	color: white;*/
     margin-bottom: 20px;
     align-items: center;
     justify-content: center;
@@ -337,8 +414,9 @@ li {
 }
 
 .swiper-slide {
-/*	background: #fff;*/
-	background-color:#F0FFF0;
+	background: #fff;
+/*	background-color:#F0FFF0;*/
+/*	background-color: green;*/
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 49%;
@@ -355,6 +433,116 @@ li {
     background-color: #333;
 }
 
+.gradient-testimonial {
+  background: linear-gradient(to bottom, #9DC183, #4CAF50);
+  width: 100%;
+  min-height: 100vh; /* Adjust this to ensure it covers your sections */
+}
+
+/* Media Queries for Small Devices (e.g., smartphones) */
+@media (max-width: 767px) {
+    #testimonials {
+        padding: 3%;
+    }
+
+    .testimonial-text {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .swiper-slide {
+        max-width: 100%;
+        margin-right: 0;
+        padding: 15px;
+    }
+
+    .client-info {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .client-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .client-name {
+        font-size: 1rem;
+        margin-bottom: 2px;
+    }
+
+    .client-role {
+        font-size: 0.9rem;
+        word-wrap: break-word;
+        text-align: center;
+    }
+    .client-details {
+        width: 100%; 
+        text-align: center;
+    }
+}
+
+/* Media Queries for Medium Devices (e.g., tablets in portrait mode) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .testimonial-text {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .swiper-slide {
+        max-width: 100%;
+        margin-right: 0;
+        padding: 20px;
+    }
+
+    .client-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .client-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .client-name {
+        font-size: 1.2rem;
+        margin-bottom: 2px;
+    }
+
+    .client-role {
+        font-size: 1rem;
+        word-wrap: break-word;
+        text-align: center;
+    }
+}
+
+/* Media Queries for Larger Tablets (e.g., tablets in landscape mode) */
+@media (min-width: 992px) and (max-width: 1255px) {
+    .testimonial-text {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .swiper-slide {
+        max-width: 49%;
+        padding: 20px;
+    }
+
+    .client-logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .client-name {
+        font-size: 1.4rem;
+    }
+
+    .client-role {
+        font-size: 1.1rem;
+    }
+}
 /* Testimonial Section CSS ends here */
 
 
@@ -410,6 +598,31 @@ li {
     align-items: center;
 }
 
+/* For Small Devices (e.g., smartphones) */
+@media (max-width: 767px) {
+    .about-us-blocks {
+        flex-direction: column; /* Stack items vertically */
+        /* text-align: center; Center-align content */
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+}
+
+/* For Medium Devices (e.g., tablets in portrait mode) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .about-us-blocks {
+        flex-direction: column; /* Stack items vertically */
+        padding: 25px; /* Slightly more padding than small screens */
+    }
+}
+
+/* For Larger Tablets (e.g., tablets in landscape mode) */
+@media (min-width: 992px) and (max-width: 1255px) {
+    .about-us-blocks {
+        flex-direction: row; /* Retain row layout */
+        padding: 30px; /* Default padding */
+    }
+}
+
 /*About Us Section CSS ends here*/
 
 /*Blog Section CSS starts here*/
@@ -434,13 +647,12 @@ li {
   min-height: 100vh; /* Adjust this to ensure it covers your sections */
 }
 .gradient-container-odd {
-  background: linear-gradient(to bottom, #4CAF50,#9DC183);
+  background: linear-gradient(to bottom, #9DC183,#0B6623);
   width: 100%;
   min-height: 100vh; /* Adjust this to ensure it covers your sections */
 }
 
 /* CSS by Gaurav Joshi Ends Here*/
-
 .btn-primary {
     text-transform: uppercase;
     font-weight: 300;
