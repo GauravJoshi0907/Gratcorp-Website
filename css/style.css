@@ -457,14 +457,14 @@ li {
         padding: 15px;
     }
 
-    .client-info {
-        flex-direction: column;
-        gap: 5px;
+    .client-logo-container {
+        display: none; /* Hides the logo container */
     }
 
-    .client-logo {
-        width: 50px;
-        height: 50px;
+    .client-info {
+        flex-direction: column;
+        align-items: center; /* Adjust alignment */
+        gap: 5px; /* Maintain spacing */
     }
 
     .client-name {
