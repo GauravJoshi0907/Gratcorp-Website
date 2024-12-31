@@ -616,7 +616,9 @@ li {
     flex-direction: row;
     align-items: center;
 }
-
+.about-us-section-1 p{
+	color: black;
+}
 /* For Small Devices (e.g., smartphones) */
 @media (max-width: 767px) {
     .about-us-blocks {
