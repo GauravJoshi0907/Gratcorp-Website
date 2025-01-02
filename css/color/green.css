@@ -10,7 +10,8 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #ea321e;
+   /*  Aditi- Made changes color red(#ea321e) to Green(5BB12F)  */
+    color: #5BB12F;
     text-decoration: none;
 }
 
