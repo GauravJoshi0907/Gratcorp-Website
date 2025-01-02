@@ -67,7 +67,8 @@
         li {
             font-size: 14px;
             margin-left: 10px;
-            list-style-type: circle;
+           /* Aditi - Changes List Type Circle to None*/
+            list-style-type: none;
         }
 
         .blogimg {
@@ -87,7 +88,8 @@
     <!-- Styleswitcher End
     ================================================== -->
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: initial;">
+   <!-- Aditi-Header Changes - Start -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink" style="height: 85px; background-color: #F0FFF0;">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -97,11 +99,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><img src="images/logo.png" alt="" style="margin-left: 0;margin-top: -45px;height: 100px;"></a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="images/logo.png" alt="" style="margin-left: 0;margin-top: -40px;height: 100px; color: white;"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color:#F0FFF0;">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
@@ -116,15 +118,17 @@
                     <li>
                         <a class="page-scroll" href="#blog">Blogs</a>
                     </li>
-                    <!--<li>
+                    <li>
                         <a class="page-scroll" href="#contact">contact</a>
-                    </li>-->
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
+
     </nav>
+<!-- Aditi Header Changes-End -->
 
 
     <!-- Start Home Page Slider -->
@@ -784,39 +788,89 @@
         </div>
 
     </section>-->
-    <footer class="style-1">
+  <!-- Aditi-Footer Changes- Start -->
+   <section id="contact" class="contact">
+    <footer >
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-xs-12">
-                    <span class="copyright">Copyright &copy; GratCorp IT Consultancy Services Pvt. Ltd.</span>
-                </div>
-                <!--<button type="submit" class="btn btn-primary" onclick="return sendEmail()">Send Message</button>-->
-            <div class="col-md-4 col-xs-12">
-                <div class="footer-social text-center">
-                    <ul>
-                        <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
-                        <li><a href="https://www.linkedin.com/company/gratcorptechnologies/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                        <!--<li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="footer-link">
-                    <div class="pull-right">
-
-                        <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=HRD@grat-corp.com"><strong>Reach us :</strong> HRD@grat-corp.com</a>
-                        <br />
-                        <!--
-                        <span style="color: #5BB12F;"><strong>Phone :</strong> +91-9930719311</span>
-                        -->
-
-                    </div>
-                </div>
-            </div>
+         <div class="row" style= "display: flex;"> 
+         <div class="col-md-4 col-xs-12" style="width: 50%;">
+            <div class="section-title">
+            <div class="navbar-brand page-scroll" href="#page-top"><img src="images/logo.png" alt="" style="margin-left: 0;margin-top: -6px;height: 100px; color: white;">
+           </div>
+           </div>
+          </div>
+          <div class="col-md-4 col-xs-12">
+           <ul class="Information_bx">
+          <h3> Social Links </h3>
+        <div class="d-flex align-items-center" style="align-items: center;display: flex;">
+        <div class="footer-social" style="display: flex;">
+         <a href="https://www.linkedin.com/company/gratcorptechnologies" target="_blank">
+        <img src="images\portfolio\icons8-linkedin-48.png" class="img-responsive" alt="">
+        </a>
+        <div class="footer-social">
+         <a href="https://www.facebook.com/profile.php?id=61553687897835" target="_blank">
+         <img src="images\portfolio\icons8-facebook-48.png"class="img-responsive" alt="">
+         </a>
+         </div>
         </div>
-        </div>
-    </footer>
+        </ul>
+       </div>
+        <div class="col-md-4 col-xs-12">
+         <ul class="Information_bx">
+            <h3>Information</h3>
+             <li class="Information_text">
+              <a class="page-scroll"style= "font-size: 15px;color: black" href="#feature">
+               Services
+              </a>
+             </li>
+             <li class="Information_text">
+               <a class="page-scroll" style= "font-size: 15px;color: black" href="#about-us">
+               About Us
+              </a>
+             </li>
+             <li class="Information_text">
+             <a class="page-scroll" style= "font-size: 15px;color: black" href="#blog">
+               Blogs
+              </a>
+             </li>
+            </ul>
+           </div>
+           <div class="col-md-4 col-xs-12">
+            <div class="Information_bx">
+            <h3> Reach Us </h3>
+            </div>
+            <ul>
+             <div class="reach_us">
+             <div class="d-flex align-items-center" style="align-items: center;display: flex;">
+             <div class="reach_icon_box" style="margin-right: 1.8rem;margin-bottom: 4.5rem">
+                <img src="images\portfolio\footer-reach-home.svg" alt=""style="display: block; line-height: 0;width: 150%;">
+            </div>
+              <p class="address" style= "font-size: 15px;"> 1st Floor, Chaudhary Col, Bareilly Road, Haldwani, Uttarakhand, India - 263139</p>
+             </div>
+             <div class="d-flex align-items-center" style="align-items: center;display: flex;">
+             <div class="reach_icon_box" style="margin-right: 1.8rem; width: 7%; margin-bottom: 1.5rem">
+            <img src="images\portfolio\footer-email-icon.svg" alt=""style="display: block; line-height: 0;width: 100%;">
+            </div>
+            <p class="address" style= "font-size: 15px;"> HRD@grat-corp.com</p>
+             </div>
+            </div>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </footer>
+    </section>
+    <section class="copyright_widget" style=" border-top: 1px solid #000; padding:5px;">
+        <div class="container">
+         <div class="row" style="display: flex;">
+         <div class="col-md-4 col-xs-12" >
+         <p class="copyright_txt">Copyright &copy; GratCorp IT Consultancy Services Pvt. Ltd.</p>
+            </div>
+           </div>
+          </div>
+         </section>
+
+         <!-- Aditi- Footer Changes- End -->
 
     <div id="loader">
         <div class="spinner">
