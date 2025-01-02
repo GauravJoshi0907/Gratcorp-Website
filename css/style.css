@@ -2627,8 +2627,15 @@ iframe {
 	color: black;
 }
 .Information_text{
-	margin-left: 0px;
-	margin-top: 2px;
+margin-left: 0px;
+margin-top: 2px;
+font-family: petite-caps;
+font-weight: bold;
+}
+.address{
+font-family: petite-caps;
+font-weight: bold;
+font-size: 15px;
 }
 .copyright_txt{
 	margin-left: 700px;
