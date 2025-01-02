@@ -604,7 +604,7 @@ video {
 
 @media (max-width: 480px) {
     .pop-typing-effect {
-        font-size: 4rem; 
+        font-size: 3.5rem; 
         padding: 1px;
         white-space: normal; /* Allow multi-line text on smaller screens */
     }
@@ -629,6 +629,26 @@ video {
 .about-us-section-1 p{
 	color: black;
 }
+.pop-typing-effect-about{
+    font-size: 2rem; /* Base font size */
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 3px;
+    max-width: 100%; /* Ensure it doesn't overflow the container */
+    word-wrap: break-word; /* Allow breaking words if necessary */
+    text-align: center; /* Center-align text */
+}
+
+.pop-typing-effect-about span {
+    display: inline-block;
+    opacity: 0;
+    transform: scale(0); /* Start with a scale effect for "pop" */
+    animation: typingPop 2s steps(12) 1s forwards; /* Speed up the animation */
+}
+
 /* For Small Devices (e.g., smartphones) */
 @media (max-width: 767px) {
     .about-us-blocks {
