@@ -458,9 +458,9 @@ li {
         padding: 15px;
     }
 
-    .client-logo-container {
-        display: none; /* Hides the logo container */
-    }
+    /*.client-logo-container {
+        display: none;  Hides the logo container 
+    }*/
 
     .client-info {
         flex-direction: column;
@@ -478,10 +478,10 @@ li {
         word-wrap: break-word;
         text-align: center;
     }
-    .client-details {
+/*     .client-details {
         width: 100%; 
         text-align: center;
-    }
+    } */
 }
 
 /* Media Queries for Medium Devices (e.g., tablets in portrait mode) */
