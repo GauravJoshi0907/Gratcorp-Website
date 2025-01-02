@@ -350,7 +350,17 @@ li {
         font-size: 18px;
     }
 }
-
+/*Aditi Changes- For Video*/
+video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 /*Journey Section CSS ends here*/
 
 /* Testimonial Section CSS starts here */
@@ -723,11 +733,13 @@ li {
 
 .navbar-default .nav li a {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+/*    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+     font-family:ui-sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #fff;
-    font-size: 12px;
+    color: #00A86B;
+/* Aditi Changes- Font-Size   */
+    font-size: 20px;
 }
 
 
@@ -2593,5 +2605,36 @@ iframe {
         -webkit-transform: scale(1.0);
       }
 }
-
+/* Aditi changes- Footer - Information Box Css*/
+.Information_bx
+{
+	color: black;
+}
+.Information_bx h3{
+	color: inherit;
+    font-size: 2.5rem;
+    font-family: Poppins-SemiBold;
+    text-transform: none;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+.reach_us
+{
+	color: black;
+}
+.Information_text{
+	margin-left: 0px;
+	margin-top: 2px;
+}
+.copyright_txt{
+	margin-left: 700px;
+	width: 100%;
+	font-weight: 700;
+	font-size: 1.3rem;
+	font-family: Poppins-Medium;
+	justify-content: end;
+	display: flex;
+}
+/* Aditi Changes -End*/
 
