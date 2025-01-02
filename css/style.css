@@ -70,7 +70,7 @@ li {
 
 .section-title h3{
     color:black;
-    font-size: 5rem;
+/*     font-size: 5rem; */
     font-family: 'Oswald', sans-serif;
     text-transform: none;
 }
@@ -559,7 +559,7 @@ video {
 /*Section heading effect CSS starts here*/
 
 .pop-typing-effect {
-    font-size: 2rem; /* Base font size */
+    font-size: 5rem; /* Base font size */
     font-family: 'Courier New', Courier, monospace;
     display: inline-block;
     position: relative;
@@ -594,17 +594,17 @@ video {
     }
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments 
 @media (max-width: 768px) {
     .pop-typing-effect {
         font-size: 1.2rem; 
         padding: 2px;
     }
-}
+}*/
 
 @media (max-width: 480px) {
     .pop-typing-effect {
-        font-size: 0.8rem; 
+        font-size: 4rem; 
         padding: 1px;
         white-space: normal; /* Allow multi-line text on smaller screens */
     }
