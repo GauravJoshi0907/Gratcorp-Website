@@ -257,7 +257,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         },
-        { threshold: 0.7 } // Trigger when 70% is visible
+        {
+            threshold: window.innerWidth <= 768 ? 0.3 : 0.7 // Trigger at 30% visibility on smaller screens (below 768px)
+        }
     );
 
     observer.observe(section);
