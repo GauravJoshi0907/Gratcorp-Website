@@ -606,6 +606,7 @@ video {
     .pop-typing-effect {
         font-size: 3.2rem; 
         padding: 1px;
+	font-weight:bold;
         white-space: normal; /* Allow multi-line text on smaller screens */
     }
 }
