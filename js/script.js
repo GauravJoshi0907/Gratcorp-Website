@@ -1,21 +1,17 @@
 
 var $ = jQuery.noConflict();
 
-
 // Page Loader
 $(window).load(function () {
-    
     "use strict";
-	$('#loader').fadeOut();
+    $('#loader').fadeOut();
 });
 
-
-
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
+// jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function () {
-    
     "use strict";
-    
+
+    // Smooth scrolling for page links
     $('a.page-scroll').bind('click', function (event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -23,25 +19,35 @@ $(function () {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+
+    // Highlight the top nav as scrolling occurs
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 70
+    });
+
+    // Close the responsive menu on menu item click
+    $('.navbar-collapse ul li a').click(function () {
+        "use strict";
+        $('.navbar-toggle:visible').click();
+    });
+
+    // New Added by Gaurav: Close the navbar when scrolling
+    $(window).on('scroll', function () {
+        if ($('.navbar-collapse').hasClass('in')) {
+            $('.navbar-collapse').collapse('hide');
+        }
+    });
+
+    // New Added by Gaurav: Close the navbar when clicking outside
+    $(document).on('click', function (e) {
+        if (!$(e.target).closest('.navbar').length) {
+            if ($('.navbar-collapse').hasClass('in')) {
+                $('.navbar-collapse').collapse('hide');
+            }
+        }
+    });
 });
-
-
-
-// Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: '.navbar-fixed-top',
-	offset: 70
-	
-});
-
-
-
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function () {
-    "use strict";
-    $('.navbar-toggle:visible').click();
-});
-    
     
     
     
