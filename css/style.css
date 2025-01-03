@@ -93,7 +93,9 @@ li {
 /*    background-color: #f9f9f9;*/
     padding: 50px 0;
 }
-
+.service-margin{
+	margin-bottom: 30px;
+}
 /* Feature Container Styling */
 .feature {
     text-align: center;
@@ -206,6 +208,12 @@ li {
 
 /* Responsive Layout for Smaller Screens */
 @media (max-width: 768px) {
+	.service-margin{
+		margin-bottom: 15px;
+	}
+	.feature-section{
+		padding: 5px;
+	}
     .feature-section .service {
         flex: 1 1 100%;
         max-width: 100%;
@@ -367,6 +375,7 @@ video {
 
 #testimonials{
 	padding: 5%;
+	padding-top: 2.5%;
 /*	margin: 2.5% 5%;*/
 }
 
@@ -606,7 +615,7 @@ video {
     .pop-typing-effect {
         font-size: 3.2rem; 
         padding: 1px;
-	font-weight:bold;
+		font-weight:bold;
         white-space: normal; /* Allow multi-line text on smaller screens */
     }
 }
@@ -652,6 +661,10 @@ video {
 
 /* For Small Devices (e.g., smartphones) */
 @media (max-width: 767px) {
+	.latest-news-section {
+    	padding-top: 0px;
+    	padding-bottom: 0px;
+	}
     .about-us-blocks {
         flex-direction: column; /* Stack items vertically */
         /* text-align: center; Center-align content */
@@ -1794,6 +1807,19 @@ and (min-width : 551px){
     padding-bottom: 35px;
 }
 
+@media (max-width: 767px) {
+	.blog-div{
+		margin-bottom: 0px;
+	}
+	.latest-news-section {
+    	padding-top: 10px;
+    	padding-bottom: 10px;
+	}
+	.gradient-container-odd{
+		min-height: unset;
+	} 
+}
+
 .latest-post {
     padding-bottom: 20px;
 }
@@ -1983,18 +2009,18 @@ and (min-width : 551px){
 /* Start Contact Section                           */
 /*-------------------------------------------------*/
 
-.contact {
+/*.contact {*/
     /* background: url(../images/parallax/contact-bg.jpg);*/
-background: #F0FFF0;
+	/*background: #F0FFF0;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     padding-top: 20px;
-    padding-bottom: 50px;
-    border-top:1px solid #000;
-    //padding-bottom: 100px;
-}
+    padding-bottom: 20px;
+    border-top:1px solid #000;*/
+/*    //padding-bottom: 100px;*/
+/*}*/
 
 .contact .btn-primary {
     padding: 20px;
@@ -2094,7 +2120,7 @@ background: #F0FFF0;
 /* Start Footer Section                                  */
 /*-------------------------------------------------------*/
 
-footer.style-1 {
+/*footer.style-1 {
     margin-top: 0px;
     padding: 25px 0;
     background: rgba(0, 0, 0, 0.8);
@@ -2138,7 +2164,7 @@ footer.style-1 .footer-link li {
     font-size: 13px;
 }
 
-
+*/
 .btn:focus,
 .btn:active,
 .btn.active,
@@ -2630,12 +2656,71 @@ iframe {
       }
 }
 /* Aditi changes- Footer - Information Box Css*/
-.Information_bx
-{
-	color: black;
+
+.contact {
+    background: #F0FFF0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /*padding-top: 20px;
+    padding-bottom: 20px;*/
+    border-top: 1px solid #000;
 }
-.Information_bx h3{
-	color: inherit;
+
+.footer-parent-div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  /* Ensures sections wrap on smaller screens */
+    padding: 25px 50px;
+}
+
+.footer-logo,
+.footer-social-links,
+.footer-info-div,
+.footer-address {
+    width: 23%;  /* Each section takes up 25% width */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.footer-logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-social-links,
+.footer-info-div,
+.footer-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer-social-links{
+	align-items: center;
+}
+
+.footer-social-div {
+    display: flex;  /* Align icons in a row */
+    gap: 10px;      /* Add space between icons */
+    justify-content: flex-start; 
+}
+
+.footer-social a {
+    display: inline-block;
+}
+
+.footer-logo-img {
+/*    max-width: 100%;*/
+    height: 100px;
+    margin-left:23px;
+/*    width: 150px;  */
+}
+
+.footer-parent-div h3 {
+    color: inherit;
     font-size: 2.5rem;
     font-family: Poppins-SemiBold;
     text-transform: none;
@@ -2643,21 +2728,35 @@ iframe {
     margin-bottom: 1rem;
     line-height: 1.2;
 }
-.reach_us
-{
+
+.Information_bx{
+	margin-left: 20px;
+}
+.Information_text,
+.address {
+	font-size: 15px;
+    margin-left: 0px;
+    margin-top: 2px;
+    font-family: petite-caps;
+    font-weight: bold;
+    color: black;
+}
+.Information_text a{
 	color: black;
 }
-.Information_text{
-margin-left: 0px;
-margin-top: 2px;
-font-family: petite-caps;
-font-weight: bold;
+.reach_us {
+    color: black;
 }
-.address{
-font-family: petite-caps;
-font-weight: bold;
-font-size: 15px;
+
+.reach_icon_box {
+    margin-right: 10px;  /* Adjust spacing between icon and text */
 }
+
+.d-flex {
+    display: flex;          /* Ensures items are placed in a row */
+    align-items: center;    /* Vertically aligns items in the center */
+}
+
 .copyright_txt{
 	margin-left: 700px;
 	width: 100%;
@@ -2667,5 +2766,52 @@ font-size: 15px;
 	justify-content: end;
 	display: flex;
 }
-/* Aditi Changes -End*/
 
+/* Responsiveness for smaller screens */
+
+@media (max-width: 767px) {
+    .footer-parent-div {
+        flex-direction: row;  /* Change to row for smaller screens */
+        flex-wrap: wrap;       /* Ensure sections wrap properly */
+        justify-content: space-between;  
+        align-items: center;   
+    }
+
+    .footer-logo {
+        width: 100%;  /* Logo takes up full width */
+        display: flex;
+        justify-content: center;  
+        margin-bottom: 10px;  
+    }
+
+    .footer-social-links,
+    .footer-info-div {
+        width: 42%;
+    }
+
+    .Information_bx{
+		margin-left: 0px;
+	}
+    /*.footer-social-links{
+		margin-right:10px;
+	}*/
+	.footer-social-links h3{
+		margin-left: 10px;
+	}
+
+    .footer-address {
+        width: 100%;  /* Address section stays full-width */
+        margin-top: 20px;  
+    }
+
+    
+    .footer-social-div {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .copyright_txt{
+    	margin-left: 0px;
+    	justify-content: center;
+    }
+}
