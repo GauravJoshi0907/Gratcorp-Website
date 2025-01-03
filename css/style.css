@@ -126,7 +126,7 @@ li {
 
 /* Heading Styling */
 .feature-content h4 {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #333;
     margin: 20px 0 10px;
@@ -168,26 +168,34 @@ li {
     }
 }
 
-/* Letter-by-Letter Animation */
-.animated-text span {
-	font-size: 2rem;
-	font-weight: bold;
+/* General styling for the animated text */
+.animated-text {
+    font-size: 2rem;
+    font-weight: bold;
     display: inline-block;
-    opacity: 0;
-    transform: translateY(10px);
-    animation: text-animation 0.5s ease forwards;
 }
 
-@keyframes text-animation {
-    from {
+/* Style for each letter */
+.animated-text span {
+    display: inline-block; /* Inline-block for better alignment */
+    opacity: 0; /* Start invisible */
+    transform: scale(0.8); /* Start slightly smaller */
+    animation: fade-scale-animation 1s ease forwards; /* Increased duration to 1s for slower effect */
+}
+
+/* Keyframes for the fade-in scale effect */
+@keyframes fade-scale-animation {
+    0% {
         opacity: 0;
-        transform: translateY(10px);
+        transform: scale(0.8); /* Slightly smaller */
     }
-    to {
+    100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: scale(1); /* Full size */
     }
 }
+
+
 
 /* Consistent Heights for Services */
 .feature-section .row {
@@ -1391,9 +1399,9 @@ video {
 }
 .feature h4,
 .feature-3 h4 {
-    font-size: 15px;
+/*    font-size: 15px;*/
     color: #666;
-    font-weight: 300;
+/*    font-weight: 300;*/
     font-family: 'Oswald', sans-serif;
 }
 
@@ -2804,4 +2812,3 @@ iframe {
     	justify-content: center;
     }
 }
-
