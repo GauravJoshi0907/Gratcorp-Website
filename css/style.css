@@ -209,7 +209,7 @@ li {
 /* Responsive Layout for Smaller Screens */
 @media (max-width: 768px) {
 	.service-margin{
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 	}
 	.feature-section{
 		padding: 5px;
