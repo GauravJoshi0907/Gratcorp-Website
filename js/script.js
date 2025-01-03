@@ -265,38 +265,54 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(section);
 });
 
-//Animation effect for heading 
+//Animation effect for heading
 document.addEventListener("DOMContentLoaded", () => {
     const animatedTexts = document.querySelectorAll(".animated-text");
 
     const animateText = (element) => {
-    const text = element.getAttribute("data-original-text") || element.textContent; // Store original text
+        const text = element.getAttribute("data-original-text") || element.textContent.trim(); // Store original text
         element.setAttribute("data-original-text", text);
-        element.innerHTML = ""; // Clear the existing text
+        element.innerHTML = ""; // Clear the original text
 
-        text.split("").forEach((letter, index) => {
-            const span = document.createElement("span");
-            span.textContent = letter === " " ? "\u00A0" : letter; // Replace spaces with non-breaking spaces
-            span.style.animationDelay = `${index * 0.05}s`; // Adjust delay for speed
-            element.appendChild(span);
+        let letterCount = 0; // Track the global letter position for delays
+
+        text.split(" ").forEach((word) => {
+            const wordSpan = document.createElement("span"); // Group for each word
+            wordSpan.style.display = "inline-block"; // Keep words together
+            wordSpan.style.marginRight = "0.25em"; // Add space between words
+
+            word.split("").forEach((letter) => {
+                const letterSpan = document.createElement("span");
+                letterSpan.textContent = letter; // Set the letter
+                letterSpan.style.animationDelay = `${letterCount * 0.01}s`; // Stagger animation delay
+                letterSpan.style.animation = "fade-scale-animation 0.5s ease forwards"; // Apply fade-in scale animation
+                wordSpan.appendChild(letterSpan); // Add letter to word group
+                letterCount++; // Increment letter count for delay
+            });
+
+            element.appendChild(wordSpan); // Add word group to the element
         });
     };
-
 
     const observer = new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    animateText(entry.target); // Trigger animation every time
+                    animateText(entry.target); // Trigger animation
+                } else {
+                    // Reset the text to allow re-animation
+                    const originalText = entry.target.getAttribute("data-original-text");
+                    if (originalText) {
+                        entry.target.innerHTML = originalText;
+                    }
                 }
             });
         },
-        { threshold: 0.5 } // Adjust visibility threshold if needed
+        { threshold: 0.1 } // Trigger when 10% of the element is visible
     );
 
     animatedTexts.forEach((text) => observer.observe(text)); // Observe each animated text element
 });
-
 
 
 //Animation effect for paragraph
