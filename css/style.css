@@ -2785,8 +2785,11 @@ iframe {
     .Information_bx{
 		margin-left: 0px;
 	}
+
 	.footer-logo-img {
-    	margin-left: -35px;
+    	margin-left: -13px;
+		max-width: 100%;
+		height: auto;
 	}
 
     .footer-social-links{
