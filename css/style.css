@@ -2668,17 +2668,6 @@ iframe {
 }
 /* Aditi changes- Footer - Information Box Css*/
 
-.contact {
-    background: #F0FFF0;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    /*padding-top: 20px;
-    padding-bottom: 20px;*/
-    border-top: 1px solid #000;
-}
-
 .footer-parent-div {
     display: flex;
     justify-content: space-between;
