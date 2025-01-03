@@ -2774,7 +2774,8 @@ iframe {
         flex-direction: row;  /* Change to row for smaller screens */
         flex-wrap: wrap;       /* Ensure sections wrap properly */
         justify-content: space-between;  
-        align-items: center;   
+        align-items: center;
+        padding: ;   
     }
 
     .footer-logo {
@@ -2786,18 +2787,18 @@ iframe {
 
     .footer-social-links,
     .footer-info-div {
-        width: 42%;
+        width: 50%;
     }
 
     .Information_bx{
 		margin-left: 0px;
 	}
-    /*.footer-social-links{
-		margin-right:10px;
-	}*/
-	.footer-social-links h3{
-		margin-left: 10px;
+    .footer-social-links{
+		align-items: normal;
 	}
+	/*.footer-social-links h3{
+		margin-left: 8px;
+	}*/
 
     .footer-address {
         width: 100%;  /* Address section stays full-width */
@@ -2806,7 +2807,7 @@ iframe {
 
     
     .footer-social-div {
-        justify-content: center;
+/*        justify-content: center;*/
         gap: 15px;
     }
 
@@ -2815,3 +2816,4 @@ iframe {
     	justify-content: center;
     }
 }
+
