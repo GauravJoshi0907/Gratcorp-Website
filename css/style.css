@@ -2775,7 +2775,7 @@ iframe {
         flex-wrap: wrap;       /* Ensure sections wrap properly */
         justify-content: space-between;  
         align-items: center;
-        padding: ;   
+        padding: 10px 25px;   
     }
 
     .footer-logo {
