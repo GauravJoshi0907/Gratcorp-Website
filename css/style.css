@@ -2778,39 +2778,24 @@ iframe {
         padding: 10px 25px;   
     }
 
-    .footer-logo {
-        width: 100%;  /* Logo takes up full width */
-        display: flex;
-        justify-content: center;  
-        margin-bottom: 10px;  
-    }
-
-    .footer-social-links,
-    .footer-info-div {
+    .footer-social-links,.footer-logo,.footer-info-div,.footer-address {
         width: 50%;
     }
 
     .Information_bx{
 		margin-left: 0px;
 	}
+	.footer-logo-img {
+    	margin-left: -35px;
+	}
+
     .footer-social-links{
 		align-items: normal;
 	}
-	/*.footer-social-links h3{
-		margin-left: 8px;
-	}*/
-
-    .footer-address {
-        width: 100%;  /* Address section stays full-width */
-        margin-top: 20px;  
-    }
-
     
-    .footer-social-div {
-/*        justify-content: center;*/
-        gap: 15px;
+    .footer-info-div{
+    	margin-bottom: auto;
     }
-
     .copyright_txt{
     	margin-left: 0px;
     	justify-content: center;
