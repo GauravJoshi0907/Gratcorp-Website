@@ -806,6 +806,13 @@ video {
 	margin-top: -25px;
 	margin-left: -92px;
 }
+/* Responsiveness for smaller screens */
+@media (max-width: 767px) {
+	.company-logo{
+		height: 100px;
+		margin-left: 0px;
+	}
+}
 
 @media(min-width:768px) {
     .navbar-default {
